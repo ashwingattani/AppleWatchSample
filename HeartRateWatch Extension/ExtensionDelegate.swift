@@ -7,11 +7,38 @@
 //
 
 import WatchKit
+import UserNotifications
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        UNUserNotificationCenter.current().delegate = self
+
+        self.registerNotification()
+
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void)
+    {
+        //Handle the notification
+        completionHandler(
+            [UNNotificationPresentationOptions.alert,
+             UNNotificationPresentationOptions.sound,
+             UNNotificationPresentationOptions.badge])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("##### didReceive response Extension")
+        //WKInterfaceController().updateUserActivity("", userInfo: nil, webpageURL: nil)
+//         let sharedUserActivityType = "com.yourcompany.yourapp.youraction"
+//
+//        let sharedIdentifierKey = "identifier"
+//
+//        WKInterfaceController().updateUserActivity(sharedUserActivityType, userInfo: [sharedIdentifierKey : 123456], webpageURL: nil)
+
+        
+        completionHandler()
     }
 
     func applicationDidBecomeActive() {
@@ -49,6 +76,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             default:
                 // make sure to complete unhandled task types
                 task.setTaskCompletedWithSnapshot(false)
+            }
+        }
+    }
+    
+    func registerNotification() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
+            (granted, error) in
+            if granted {
+                print("yes")
+            } else {
+                print("No")
             }
         }
     }

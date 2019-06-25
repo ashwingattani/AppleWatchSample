@@ -9,9 +9,11 @@
 import WatchKit
 import Foundation
 import HealthKit
+import UserNotifications
 
 class InterfaceController: WKInterfaceController {
 
+    
     @IBOutlet weak var lblHeartRate: WKInterfaceLabel!
     
     let health: HKHealthStore = HKHealthStore()
@@ -19,13 +21,18 @@ class InterfaceController: WKInterfaceController {
     let heartRateType:HKQuantityType   = HKQuantityType.quantityType(forIdentifier: .heartRate)!
     var heartRateQuery:HKQuery?
     
+    var observeQuery:HKObserverQuery?
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
         
-        heartRateQuery = self.createStreamingQuery()
-        health.execute(heartRateQuery!)
+        self.sendNotification()
+        
+        
+//        heartRateQuery = self.createStreamingQuery()
+//        health.execute(heartRateQuery!)
     }
     
     override func willActivate() {
@@ -40,42 +47,50 @@ class InterfaceController: WKInterfaceController {
     
     private func createStreamingQuery() -> HKQuery
     {
-        let queryPredicate  = HKQuery.predicateForSamples(withStart: Date.init(timeIntervalSince1970: 0), end: nil, options: [])
-        let query = HKAnchoredObjectQuery.init(type: heartRateType, predicate: queryPredicate, anchor: nil, limit: 25) { (query, samples, deletedObjects, anchor, error) in
+        let queryPredicate = HKQuery.predicateForSamples(withStart: Date.distantPast, end: Date(), options: .strictEndDate)
+
+        let query = HKAnchoredObjectQuery.init(type: heartRateType, predicate: queryPredicate, anchor: nil, limit: Int(HKObjectQueryNoLimit)) { (query, samples, deletedObjects, anchor, error) in
             if let errorFound = error {
                 print("query error: \(errorFound.localizedDescription)")
             } else {
                 //printing heart rate
                 if let fetchedSamples = samples as? [HKQuantitySample]
                 {
-                    for item in fetchedSamples {
-                        print("Heart Rate: \(item.quantity.doubleValue(for: self.heartRateUnit))")
+                   let lastHeartRate = fetchedSamples[fetchedSamples.count - 1]
+                    let hRate:Double = lastHeartRate.quantity.doubleValue(for: self.heartRateUnit)
+                    self.lblHeartRate.setText(String("Heart Rate: \(hRate)"))
+                    print("HRate is =\(hRate)")
+                    if hRate >= 60.0 {
+                        self.sendNotification()
                     }
                 }
             }
-        }//eo-query
-        
-//        query.updateHandler =
-//            { (query:HKAnchoredObjectQuery, samples:[HKSample]?, deletedObjects:[HKDeletedObject]?, anchor:HKQueryAnchor?, error:NSError?) -> Void in
-//
-//                if let errorFound:NSError = error
-//                {
-//                    print("query-handler error : \(errorFound.localizedDescription)")
-//                }
-//                else
-//                {
-//                    //printing heart rate
-//                    if let samples = samples as? [HKQuantitySample]
-//                    {
-//                        if let quantity = samples.last?.quantity
-//                        {
-//                            print("\(quantity.doubleValue(for: self.heartRateUnit))")
-//                        }
-//                    }
-//                }//eo-non_error
-//            }//eo-query-handler
-        
+        }
         return query
     }
-
+    
+    
+    func sendNotification() {
+        // 1
+        let content = UNMutableNotificationContent()
+        content.title = "Notification Tutorial"
+        content.subtitle = "from ioscreator.com"
+        content.body = " Notification triggered"
+        
+        // 2
+//        let imageName = "user"
+//        guard let imageURL = Bundle.main.url(forResource: imageName, withExtension: "png") else { return }
+//
+//        let attachment = try! UNNotificationAttachment(identifier: "apptest", url: imageURL, options: .none)
+//
+//        content.attachments = [attachment]
+        
+        // 3
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
+        
+        // 4
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+  
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DB703D522C24BCF00245A53 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB703D422C24BCE00245A53 /* user.png */; };
 		D6CCAFE022C1F4B2007725FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCAFDF22C1F4B2007725FD /* AppDelegate.swift */; };
 		D6CCAFE222C1F4B2007725FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCAFE122C1F4B2007725FD /* ViewController.swift */; };
 		D6CCAFE522C1F4B2007725FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CCAFE322C1F4B2007725FD /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4DB703D422C24BCE00245A53 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		D6CCAFDC22C1F4B2007725FD /* HeartRateSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CCAFDF22C1F4B2007725FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6CCAFE122C1F4B2007725FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		D6CCAFDE22C1F4B2007725FD /* HeartRateSample */ = {
 			isa = PBXGroup;
 			children = (
+				4DB703D422C24BCE00245A53 /* user.png */,
 				D6CCAFF122C1F59E007725FD /* HeartRateSample.entitlements */,
 				D6CCAFDF22C1F4B2007725FD /* AppDelegate.swift */,
 				D6CCAFE122C1F4B2007725FD /* ViewController.swift */,
@@ -296,6 +299,7 @@
 			files = (
 				D6CCAFEA22C1F4BC007725FD /* LaunchScreen.storyboard in Resources */,
 				D6CCAFE722C1F4BC007725FD /* Assets.xcassets in Resources */,
+				4DB703D522C24BCF00245A53 /* user.png in Resources */,
 				D6CCAFE522C1F4B2007725FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,14 +509,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HeartRateSample/HeartRateSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8RYTVQ4BP;
+				DEVELOPMENT_TEAM = UR2X6U6469;
 				INFOPLIST_FILE = HeartRateSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protons.HeartRateSample123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protons1.HeartRateSample123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,14 +529,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HeartRateSample/HeartRateSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8RYTVQ4BP;
+				DEVELOPMENT_TEAM = UR2X6U6469;
 				INFOPLIST_FILE = HeartRateSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protons.HeartRateSample123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protons1.HeartRateSample123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,14 +549,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "HeartRateWatch Extension/HeartRateWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8RYTVQ4BP;
+				DEVELOPMENT_TEAM = UR2X6U6469;
 				INFOPLIST_FILE = "HeartRateWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protons.HeartRateSample123.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protons1.HeartRateSample123.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -568,14 +572,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "HeartRateWatch Extension/HeartRateWatch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8RYTVQ4BP;
+				DEVELOPMENT_TEAM = UR2X6U6469;
 				INFOPLIST_FILE = "HeartRateWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protons.HeartRateSample123.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protons1.HeartRateSample123.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -591,10 +595,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8RYTVQ4BP;
+				DEVELOPMENT_TEAM = UR2X6U6469;
 				IBSC_MODULE = HeartRateWatch_Extension;
 				INFOPLIST_FILE = HeartRateWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.protons.HeartRateSample123.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protons1.HeartRateSample123.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -610,10 +614,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8RYTVQ4BP;
+				DEVELOPMENT_TEAM = UR2X6U6469;
 				IBSC_MODULE = HeartRateWatch_Extension;
 				INFOPLIST_FILE = HeartRateWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.protons.HeartRateSample123.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.protons1.HeartRateSample123.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
