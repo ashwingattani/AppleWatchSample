@@ -15,6 +15,8 @@ class InterfaceController: WKInterfaceController {
 
     
     @IBOutlet weak var lblHeartRate: WKInterfaceLabel!
+    @IBOutlet weak var moviePlayer: WKInterfaceMovie!
+
     
     let health: HKHealthStore = HKHealthStore()
     let heartRateUnit:HKUnit = HKUnit(from: "count/min")
@@ -25,14 +27,27 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.showMoviePlayer), name: NSNotification.Name(rawValue: "showMoviePlayer"), object: nil)
         // Configure interface objects here.
-        
         self.sendNotification()
-        
+
         
 //        heartRateQuery = self.createStreamingQuery()
-//        health.execute(heartRateQuery!)
+//       health.execute(heartRateQuery!)
+        
+       
+
+        
+//        let options = [WKMediaPlayerControllerOptionsAutoplayKey : "true"]
+//        
+//        presentMediaPlayerController(with: url, options: options, completion: { didPlayToEnd, endTime, error in
+//            
+//            print(error?.localizedDescription ?? "success")
+//        })
+        
+       
+        
+        
     }
     
     override func willActivate() {
@@ -71,26 +86,22 @@ class InterfaceController: WKInterfaceController {
     
     
     func sendNotification() {
-        // 1
         let content = UNMutableNotificationContent()
         content.title = "Heart Rate increasing above 60"
         content.subtitle = ""
         content.body = "Take Rest"
         
-        // 2
-//        let imageName = "user"
-//        guard let imageURL = Bundle.main.url(forResource: imageName, withExtension: "png") else { return }
-//
-//        let attachment = try! UNNotificationAttachment(identifier: "apptest", url: imageURL, options: .none)
-//
-//        content.attachments = [attachment]
-        
-        // 3
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
         
-        // 4
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
+    @objc func showMoviePlayer() {
+        moviePlayer.setHidden(false)
+        let url = Bundle.main.url(forResource: "movieclip",
+                                  withExtension: "mov")!
+        moviePlayer.setMovieURL(url)
     }
   
 }

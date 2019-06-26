@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
@@ -15,9 +14,11 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HeartRateWatch" customModuleProvider="target">
                     <items>
                         <label width="136" alignment="left" text="Heart Rate" textAlignment="center" id="cSR-jw-4On"/>
+                        <movie width="1" height="100" alignment="left" hidden="YES" posterImage="user" id="rD2-6q-4WV"/>
                     </items>
                     <connections>
                         <outlet property="lblHeartRate" destination="cSR-jw-4On" id="Iyl-ir-3cP"/>
+                        <outlet property="moviePlayer" destination="rD2-6q-4WV" id="hAK-pN-R8Z"/>
                     </connections>
                 </controller>
             </objects>

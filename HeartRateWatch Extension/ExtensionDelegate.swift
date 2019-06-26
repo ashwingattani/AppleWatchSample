@@ -21,10 +21,6 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
     }
     
     
-    
-
-    
-    
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void)
     {
         //Handle the notification
@@ -36,7 +32,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print("##### didReceive response Extension")
-       
+        
+        NotificationCenter.default.post(name: Notification.Name("showMoviePlayer"), object: nil, userInfo: nil)
+
         completionHandler()
     }
 
