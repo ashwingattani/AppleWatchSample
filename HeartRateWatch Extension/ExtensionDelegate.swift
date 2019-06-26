@@ -8,16 +8,22 @@
 
 import WatchKit
 import UserNotifications
+import WatchConnectivity
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterDelegate {
+    
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         UNUserNotificationCenter.current().delegate = self
-
         self.registerNotification()
-
+      
     }
+    
+    
+    
+
+    
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void)
     {
@@ -30,14 +36,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print("##### didReceive response Extension")
-        //WKInterfaceController().updateUserActivity("", userInfo: nil, webpageURL: nil)
-//         let sharedUserActivityType = "com.yourcompany.yourapp.youraction"
-//
-//        let sharedIdentifierKey = "identifier"
-//
-//        WKInterfaceController().updateUserActivity(sharedUserActivityType, userInfo: [sharedIdentifierKey : 123456], webpageURL: nil)
-
-        
+       
         completionHandler()
     }
 

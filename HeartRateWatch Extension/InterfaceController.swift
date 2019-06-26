@@ -73,9 +73,9 @@ class InterfaceController: WKInterfaceController {
     func sendNotification() {
         // 1
         let content = UNMutableNotificationContent()
-        content.title = "Notification Tutorial"
-        content.subtitle = "from ioscreator.com"
-        content.body = " Notification triggered"
+        content.title = "Heart Rate increasing above 60"
+        content.subtitle = ""
+        content.body = "Take Rest"
         
         // 2
 //        let imageName = "user"
