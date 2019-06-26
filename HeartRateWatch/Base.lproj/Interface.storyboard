@@ -13,12 +13,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HeartRateWatch" customModuleProvider="target">
                     <items>
-                        <label width="136" alignment="left" text="Heart Rate" textAlignment="center" id="cSR-jw-4On"/>
-                        <movie width="1" height="100" alignment="left" hidden="YES" posterImage="user" id="rD2-6q-4WV"/>
+                        <label width="136" height="119" alignment="center" verticalAlignment="center" text="Heart Rate" textAlignment="center" numberOfLines="3" id="cSR-jw-4On">
+                            <color key="textColor" red="0.84761891079999996" green="0.24273067389951805" blue="0.14624186112240375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="lblHeartRate" destination="cSR-jw-4On" id="Iyl-ir-3cP"/>
-                        <outlet property="moviePlayer" destination="rD2-6q-4WV" id="hAK-pN-R8Z"/>
                     </connections>
                 </controller>
             </objects>

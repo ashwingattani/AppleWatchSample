@@ -15,7 +15,7 @@ class InterfaceController: WKInterfaceController {
 
     
     @IBOutlet weak var lblHeartRate: WKInterfaceLabel!
-    @IBOutlet weak var moviePlayer: WKInterfaceMovie!
+//    @IBOutlet weak var moviePlayer: WKInterfaceMovie!
 
     
     let health: HKHealthStore = HKHealthStore()
@@ -27,27 +27,16 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.showMoviePlayer), name: NSNotification.Name(rawValue: "showMoviePlayer"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.showMoviePlayer), name: NSNotification.Name (rawValue: "showMoviePlayer"), object: nil)
         // Configure interface objects here.
-        self.sendNotification()
+     //   self.sendNotification()
 
         
-//        heartRateQuery = self.createStreamingQuery()
-//       health.execute(heartRateQuery!)
+       heartRateQuery = self.createStreamingQuery()
+       health.execute(heartRateQuery!)
         
        
-
-        
-//        let options = [WKMediaPlayerControllerOptionsAutoplayKey : "true"]
-//        
-//        presentMediaPlayerController(with: url, options: options, completion: { didPlayToEnd, endTime, error in
-//            
-//            print(error?.localizedDescription ?? "success")
-//        })
-        
        
-        
-        
     }
     
     override func willActivate() {
@@ -98,10 +87,21 @@ class InterfaceController: WKInterfaceController {
     }
     
     @objc func showMoviePlayer() {
-        moviePlayer.setHidden(false)
+       // moviePlayer.setHidden(false)
         let url = Bundle.main.url(forResource: "movieclip",
                                   withExtension: "mov")!
-        moviePlayer.setMovieURL(url)
+       
+        //moviePlayer.setMovieURL(url)
+        
+        
+        
+                let options = [WKMediaPlayerControllerOptionsAutoplayKey : "true"]
+        
+                presentMediaPlayerController(with: url, options: options, completion: { didPlayToEnd, endTime, error in
+        
+                    print(error?.localizedDescription ?? "success")
+                })
+        
     }
   
 }
