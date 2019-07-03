@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.protons1.HeartRateSample123</string>
+	<string>com.dev.heartratesample</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-w0-TTq">
-                                <rect key="frame" x="174" y="121" width="66" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-w0-TTq">
+                                <rect key="frame" x="174" y="433" width="66" height="30"/>
                                 <state key="normal" title="Authorize"/>
                                 <connections>
                                     <action selector="authorizeHealthKit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qy-Dh-jXB"/>
@@ -28,6 +27,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qef-w0-TTq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UPm-bs-ndC"/>
+                            <constraint firstItem="Qef-w0-TTq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xcR-G5-eZk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
