@@ -571,9 +571,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleWatchKitDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleExtensionWatchDistribution_June2;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -596,9 +596,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleWatchKitDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleExtensionWatchDistribution_June2;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -617,9 +617,9 @@
 				DEVELOPMENT_TEAM = 5YVF838RR5;
 				IBSC_MODULE = HeartRateWatch_Extension;
 				INFOPLIST_FILE = HeartRateWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleWatchKitDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleWatchKitAppDistribution;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -638,9 +638,9 @@
 				DEVELOPMENT_TEAM = 5YVF838RR5;
 				IBSC_MODULE = HeartRateWatch_Extension;
 				INFOPLIST_FILE = HeartRateWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleWatchKitDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleWatchKitAppDistribution;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
