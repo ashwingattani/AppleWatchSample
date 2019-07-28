@@ -11,6 +11,7 @@ import Foundation
 import HealthKit
 import UserNotifications
 
+
 class InterfaceController: WKInterfaceController {
 
     
@@ -28,25 +29,41 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         NotificationCenter.default.addObserver(self, selector: #selector(self.showMoviePlayer), name: NSNotification.Name (rawValue: "showMoviePlayer"), object: nil)
-        // Configure interface objects here.
+       // self.lblHeartRate.setText("")
+     // Configure interface objects here.
+        
      //   self.sendNotification()
+       // self.fetchHealthRateData()
 
-        
-       heartRateQuery = self.createStreamingQuery()
-       health.execute(heartRateQuery!)
-        
-       
-       
+    }
+    
+    
+    
+    func showAlert() {
+        self.presentController(withName: "ErrorInterfaceController", context:["title":"yourTitle" , "text":"yourText"])
+      
+    }
+    
+    func fetchHealthRateData() {
+         heartRateQuery = self.createStreamingQuery()
+          health.execute(heartRateQuery!)
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        print("willActivate notificationCount == \(notificationCount)")
+        
+        if notificationCount == 0 {
+           self.fetchHealthRateData()
+        }
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        print("didDeactivate")
+       // notificationCount = 0
     }
     
     private func createStreamingQuery() -> HKQuery
@@ -60,12 +77,14 @@ class InterfaceController: WKInterfaceController {
                 //printing heart rate
                 if let fetchedSamples = samples as? [HKQuantitySample]
                 {
-                   let lastHeartRate = fetchedSamples[fetchedSamples.count - 1]
+                    if fetchedSamples.count > 0 {
+                    let lastHeartRate = fetchedSamples[fetchedSamples.count - 1]
                     let hRate:Double = lastHeartRate.quantity.doubleValue(for: self.heartRateUnit)
                     self.lblHeartRate.setText(String("Heart Rate: \(hRate)"))
                     print("HRate is =\(hRate)")
-                    if hRate >= 60.0 {
-                        self.sendNotification()
+                        if hRate >= 60.0 {
+                            self.sendNotification()
+                        }
                     }
                 }
             }

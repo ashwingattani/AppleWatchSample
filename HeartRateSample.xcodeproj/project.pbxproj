@@ -20,7 +20,7 @@
 		D6CCAFF722C1F670007725FD /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCAFF622C1F670007725FD /* HealthKitManager.swift */; };
 		D6CCAFFE22C201BD007725FD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CCAFFC22C201BD007725FD /* Interface.storyboard */; };
 		D6CCB00022C201C1007725FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CCAFFF22C201C1007725FD /* Assets.xcassets */; };
-		D6CCB00722C201C1007725FD /* HeartRateWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6CCB00622C201C1007725FD /* HeartRateWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6CCB00722C201C1007725FD /* HeartRateWatch_Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6CCB00622C201C1007725FD /* HeartRateWatch_Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6CCB00C22C201C1007725FD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCB00B22C201C1007725FD /* InterfaceController.swift */; };
 		D6CCB00E22C201C1007725FD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCB00D22C201C1007725FD /* ExtensionDelegate.swift */; };
 		D6CCB01022C201C1007725FD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCB00F22C201C1007725FD /* NotificationController.swift */; };
@@ -53,7 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D6CCB00722C201C1007725FD /* HeartRateWatch Extension.appex in Embed App Extensions */,
+				D6CCB00722C201C1007725FD /* HeartRateWatch_Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +88,7 @@
 		D6CCAFFD22C201BD007725FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D6CCAFFF22C201C1007725FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6CCB00122C201C1007725FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6CCB00622C201C1007725FD /* HeartRateWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HeartRateWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CCB00622C201C1007725FD /* HeartRateWatch_Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HeartRateWatch_Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CCB00B22C201C1007725FD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		D6CCB00D22C201C1007725FD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D6CCB00F22C201C1007725FD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 			children = (
 				D6CCAFDC22C1F4B2007725FD /* HeartRateSample.app */,
 				D6CCAFFA22C201BD007725FD /* HeartRateWatch.app */,
-				D6CCB00622C201C1007725FD /* HeartRateWatch Extension.appex */,
+				D6CCB00622C201C1007725FD /* HeartRateWatch_Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 			);
 			name = "HeartRateWatch Extension";
 			productName = "HeartRateWatch Extension";
-			productReference = D6CCB00622C201C1007725FD /* HeartRateWatch Extension.appex */;
+			productReference = D6CCB00622C201C1007725FD /* HeartRateWatch_Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -572,7 +572,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = HeartRateWatch_Extension;
 				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleExtensionWatchDistribution_June2;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -597,7 +597,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = HeartRateWatch_Extension;
 				PROVISIONING_PROFILE_SPECIFIER = HeartRateSampleExtensionWatchDistribution_June2;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

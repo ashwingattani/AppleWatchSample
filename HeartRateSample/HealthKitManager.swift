@@ -18,16 +18,53 @@ class HealthKitManager: NSObject {
     
     func authorizeHealthKit() {
         
-        let healthKitTypes: Set = [
-            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!,
-            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
-        ]
+        let infoToRead = Set([
+            HKSampleType.characteristicType(forIdentifier: .biologicalSex)!,
+            HKSampleType.characteristicType(forIdentifier: .dateOfBirth)!,
+            HKSampleType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            HKSampleType.quantityType(forIdentifier: .distanceWalkingRunning)!,
+            HKSampleType.quantityType(forIdentifier: .heartRate)!,
+            HKSampleType.workoutType()
+            ])
+        let infoToWrite = Set([
+            HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)!,
+            HKObjectType.quantityType(forIdentifier: .heartRate)!,
+            HKObjectType.workoutType()
+            ])
         
-        healthKitStore.requestAuthorization(toShare: healthKitTypes,
-                                            read: healthKitTypes) { _, _ in
+        
+        
+//        let healthKitTypes: Set = [
+//            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!,
+//            HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
+//        ]
+        
+        healthKitStore.requestAuthorization(toShare: infoToWrite,
+                                            read: infoToRead) { _, _ in
+                                                self.saveMockHeartData()
                                                 self.getTodaysHeartRates()
         }
     }
+    
+    
+    private func saveMockHeartData() {
+        
+        // 1. Create a heart rate BPM Sample
+        let heartRateType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!
+        let heartRateQuantity = HKQuantity(unit: HKUnit(from: "count/min"),
+                                           doubleValue: Double(arc4random_uniform(80) + 100))
+        let heartSample = HKQuantitySample(type: heartRateType,
+                                           quantity: heartRateQuantity, start: NSDate() as Date, end: NSDate() as Date)
+        
+        // 2. Save the sample in the store
+        healthKitStore.save(heartSample, withCompletion: { (success, error) -> Void in
+            if let error = error {
+                print("Error saving heart sample: \(error.localizedDescription)")
+            }
+        })
+    }
+
     
     /*Method to get todays heart rate - this only reads data from health kit. */
     func getTodaysHeartRates()

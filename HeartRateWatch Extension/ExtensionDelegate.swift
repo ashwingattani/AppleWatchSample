@@ -10,11 +10,14 @@ import WatchKit
 import UserNotifications
 import WatchConnectivity
 
+var notificationCount = 0
+
 class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterDelegate {
     
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        notificationCount = 0
         UNUserNotificationCenter.current().delegate = self
         self.registerNotification()
       
@@ -32,7 +35,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print("##### didReceive response Extension")
-        
+        notificationCount = 1
         NotificationCenter.default.post(name: Notification.Name("showMoviePlayer"), object: nil, userInfo: nil)
 
         completionHandler()
@@ -40,6 +43,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
 
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        if notificationCount > 0 {
+            notificationCount = 0
+        }
+
     }
 
     func applicationWillResignActive() {
