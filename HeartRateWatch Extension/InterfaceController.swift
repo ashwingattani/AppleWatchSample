@@ -77,7 +77,7 @@ class InterfaceController: WKInterfaceController {
                 //printing heart rate
                 if let fetchedSamples = samples as? [HKQuantitySample]
                 {
-                    if fetchedSamples.count > 0 {
+                  //  if fetchedSamples.count > 0 {
                     let lastHeartRate = fetchedSamples[fetchedSamples.count - 1]
                     let hRate:Double = lastHeartRate.quantity.doubleValue(for: self.heartRateUnit)
                     self.lblHeartRate.setText(String("Heart Rate: \(hRate)"))
@@ -85,7 +85,7 @@ class InterfaceController: WKInterfaceController {
                         if hRate >= 60.0 {
                             self.sendNotification()
                         }
-                    }
+                  //  }
                 }
             }
         }

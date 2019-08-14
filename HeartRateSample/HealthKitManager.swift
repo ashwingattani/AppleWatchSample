@@ -42,7 +42,7 @@ class HealthKitManager: NSObject {
         
         healthKitStore.requestAuthorization(toShare: infoToWrite,
                                             read: infoToRead) { _, _ in
-                                                self.saveMockHeartData()
+                                            //    self.saveMockHeartData()
                                                 self.getTodaysHeartRates()
         }
     }
@@ -87,7 +87,6 @@ class HealthKitManager: NSObject {
             
             self.printHeartRateInfo(results)
             
-            //            self.updateHistoryTableViewContent(results)
         }
         healthKitStore.execute(heartRateQuery!)
         
