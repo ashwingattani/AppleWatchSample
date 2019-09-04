@@ -2,7 +2,7 @@
 //  InterfaceController.swift
 //  HeartRateWatch Extension
 //
-//  Created by Ashwin Gattani on 25/06/19.
+//  Created by Atinderpal Singh on 25/06/19.
 //  Copyright © 2019 Protons. All rights reserved.
 //
 
@@ -12,31 +12,45 @@ import HealthKit
 import UserNotifications
 
 class InterfaceController: WKInterfaceController {
-
-    
+    let healthKitManager = HealthKitManager()
     @IBOutlet weak var lblHeartRate: WKInterfaceLabel!
-//    @IBOutlet weak var moviePlayer: WKInterfaceMovie!
+    var dataFetchTimer = Timer()
 
-    
-    let health: HKHealthStore = HKHealthStore()
-    let heartRateUnit:HKUnit = HKUnit(from: "count/min")
-    let heartRateType:HKQuantityType   = HKQuantityType.quantityType(forIdentifier: .heartRate)!
-    var heartRateQuery:HKQuery?
-    
-    var observeQuery:HKObserverQuery?
-    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         NotificationCenter.default.addObserver(self, selector: #selector(self.showMoviePlayer), name: NSNotification.Name (rawValue: "showMoviePlayer"), object: nil)
         // Configure interface objects here.
-     //   self.sendNotification()
-
-        
-       heartRateQuery = self.createStreamingQuery()
-       health.execute(heartRateQuery!)
-        
-       
-       
+        //   self.sendNotification()
+        self.dataFetchTimerStart()
+    }
+    
+    func dataFetchTimerStart() {
+        self.dataFetchTimer = Timer.scheduledTimer(
+            timeInterval: 1,
+            target: self,
+            selector: #selector(self.fetchHealthKitData),
+            userInfo: nil,
+            repeats: true)
+    }
+    
+    func dataFetchTimerStop() {
+            self.dataFetchTimer.invalidate()
+    }
+    
+    
+  @objc func fetchHealthKitData() {
+        healthKitManager.fetchHealthData { (sound, health) in
+                        if let fetchedSamples = health.samples as? [HKQuantitySample]
+                        {
+                            let lastHeartRate = fetchedSamples[fetchedSamples.count - 1]
+                            let hRate:Double = lastHeartRate.quantity.doubleValue(for: health.heartRateUnit)
+                            self.lblHeartRate.setText(String("Heart Rate: \(hRate)"))
+                            print("HRate is =\(hRate)")
+                            if hRate >= 60.0 {
+                                self.sendNotification()
+                            }
+            }
+        }
     }
     
     override func willActivate() {
@@ -49,39 +63,20 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    private func createStreamingQuery() -> HKQuery
-    {
-        let queryPredicate = HKQuery.predicateForSamples(withStart: Date.distantPast, end: Date(), options: .strictEndDate)
-
-        let query = HKAnchoredObjectQuery.init(type: heartRateType, predicate: queryPredicate, anchor: nil, limit: Int(HKObjectQueryNoLimit)) { (query, samples, deletedObjects, anchor, error) in
-            if let errorFound = error {
-                print("query error: \(errorFound.localizedDescription)")
-            } else {
-                //printing heart rate
-                if let fetchedSamples = samples as? [HKQuantitySample]
-                {
-                   let lastHeartRate = fetchedSamples[fetchedSamples.count - 1]
-                    let hRate:Double = lastHeartRate.quantity.doubleValue(for: self.heartRateUnit)
-                    self.lblHeartRate.setText(String("Heart Rate: \(hRate)"))
-                    print("HRate is =\(hRate)")
-                    if hRate >= 60.0 {
-                        self.sendNotification()
-                    }
-                }
-            }
-        }
-        return query
+    func stringWithUUID() -> String {
+        let uuidObj = CFUUIDCreate(nil)
+        let uuidString = CFUUIDCreateString(nil, uuidObj)!
+        return uuidString as String
     }
-    
     
     func sendNotification() {
         let content = UNMutableNotificationContent()
         content.title = "Heart Rate increasing above 60"
-        content.subtitle = ""
+        content.subtitle = "hkjkj"
         content.body = "Take Rest"
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
+        let request = UNNotificationRequest(identifier: self.stringWithUUID(), content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
@@ -90,11 +85,6 @@ class InterfaceController: WKInterfaceController {
        // moviePlayer.setHidden(false)
         let url = Bundle.main.url(forResource: "movieclip",
                                   withExtension: "mov")!
-       
-        //moviePlayer.setMovieURL(url)
-        
-        
-        
                 let options = [WKMediaPlayerControllerOptionsAutoplayKey : "true"]
         
                 presentMediaPlayerController(with: url, options: options, completion: { didPlayToEnd, endTime, error in

@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111BC4C3BE397C32ABCC5C76D08D0A6A /* Pods-HeartRateWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CFD8C01A229C38EFA0DD152A35D6D5 /* Pods-HeartRateWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D0DE168F84CFB6DD90E433B3419D162 /* Pods-HeartRateSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B8E04C1CF121FF930338C66C189BFF /* Pods-HeartRateSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		304695AD099FF6DA33844D849EA0376A /* Pods-HeartRateSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6AB2D14D4B59819D709E4D3A4D7E06 /* Pods-HeartRateSample-dummy.m */; };
+		57865BD2EDCA1F3B64BCB1A1A5110452 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		6337E91EC4B0CDC129FB904A74252D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+		74FAE10D5B0F7C50C52104DA4D16C1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+		9D259757C4B2FE2DC982A8844D021BD6 /* Pods-HeartRateWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A47802D44BF11154325A138549F9CACC /* Pods-HeartRateWatch-dummy.m */; };
+		CC580A0739F2C8B6385617CDA80012AF /* Pods-HeartRateWatch Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B909A56AF3824763E94AE79DE45B50 /* Pods-HeartRateWatch Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7AB7C47D66867ED40D7B726E16C1A57 /* Pods-HeartRateWatch Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFB4FDA6760A479139F181784076336 /* Pods-HeartRateWatch Extension-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A0603D726BF09D5C20E2DB7BEB44987 /* Pods-HeartRateWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartRateWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		0EC06E3308F8E6B8C9249C66F7836D33 /* Pods-HeartRateWatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeartRateWatch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17FA047EDD3B9FB90C1E995232D4C3D5 /* Pods_HeartRateSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeartRateSample.framework; path = "Pods-HeartRateSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3BD0CD039B3E633A53E43E2CC3134E /* Pods-HeartRateWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeartRateWatch.modulemap"; sourceTree = "<group>"; };
+		2D99F58D4763BF8189702092E50EB2A2 /* Pods_HeartRateWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeartRateWatch.framework; path = "Pods-HeartRateWatch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B8E04C1CF121FF930338C66C189BFF /* Pods-HeartRateSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeartRateSample-umbrella.h"; sourceTree = "<group>"; };
+		34B4F27010377799C95971FDF6CB3ED6 /* Pods_HeartRateWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeartRateWatch_Extension.framework; path = "Pods-HeartRateWatch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CFD8C01A229C38EFA0DD152A35D6D5 /* Pods-HeartRateWatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeartRateWatch-umbrella.h"; sourceTree = "<group>"; };
+		46FE477E8618085F3B13C69D088F7DE0 /* Pods-HeartRateWatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartRateWatch-acknowledgements.plist"; sourceTree = "<group>"; };
+		4A6AB2D14D4B59819D709E4D3A4D7E06 /* Pods-HeartRateSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeartRateSample-dummy.m"; sourceTree = "<group>"; };
+		52C6EA7BC1DB3ECA2A45FC15DE2C6865 /* Pods-HeartRateWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartRateWatch.release.xcconfig"; sourceTree = "<group>"; };
+		5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B4AFBE6821498B70210B39C1221B7CA /* Pods-HeartRateSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeartRateSample.modulemap"; sourceTree = "<group>"; };
+		84183A266A4ABA71B621B8F6A1715496 /* Pods-HeartRateWatch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartRateWatch-Info.plist"; sourceTree = "<group>"; };
+		86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8A9CD6D017B4B7C9546618D158E96A82 /* Pods-HeartRateWatch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartRateWatch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EF601AF3C8128F9AD51356C31770A2D /* Pods-HeartRateSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartRateSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E26E9C0072EBFF000A368DAECB5932D /* Pods-HeartRateSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartRateSample-Info.plist"; sourceTree = "<group>"; };
+		A0AA61EE47DA65B2E0B75CF86360CADA /* Pods-HeartRateWatch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeartRateWatch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A47802D44BF11154325A138549F9CACC /* Pods-HeartRateWatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeartRateWatch-dummy.m"; sourceTree = "<group>"; };
+		AAD736C82A8A0C04FF20FAF8B6D833DE /* Pods-HeartRateSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartRateSample.debug.xcconfig"; sourceTree = "<group>"; };
+		B004C00C450C7316F4293729B5FE056A /* Pods-HeartRateWatch Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartRateWatch Extension-Info.plist"; sourceTree = "<group>"; };
+		B21335D546738A4C805AC66AA861C496 /* Pods-HeartRateSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeartRateSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C3A863F6A9240CAD991465049BF29F0F /* Pods-HeartRateWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartRateWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		E27EE89583CDBF535DC7684513ADB315 /* Pods-HeartRateWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartRateWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		ECFB4FDA6760A479139F181784076336 /* Pods-HeartRateWatch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeartRateWatch Extension-dummy.m"; sourceTree = "<group>"; };
+		EEDCE1116BCDC133DA37BB972E91646C /* Pods-HeartRateWatch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HeartRateWatch Extension.modulemap"; sourceTree = "<group>"; };
+		F2B909A56AF3824763E94AE79DE45B50 /* Pods-HeartRateWatch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeartRateWatch Extension-umbrella.h"; sourceTree = "<group>"; };
+		F49D3F78B1EDA201241A2950E7A45004 /* Pods-HeartRateSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartRateSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2875B4AB9AAEE6666D8DA34EFF06FB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6337E91EC4B0CDC129FB904A74252D08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE3FDA959B18CA4B0197551A7154E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57865BD2EDCA1F3B64BCB1A1A5110452 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29009D855F671E7BE89ABEF50AEEC9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74FAE10D5B0F7C50C52104DA4D16C1A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11255D861F3D13793E9914C757F0DF3A /* Pods-HeartRateWatch */ = {
+			isa = PBXGroup;
+			children = (
+				1A3BD0CD039B3E633A53E43E2CC3134E /* Pods-HeartRateWatch.modulemap */,
+				0EC06E3308F8E6B8C9249C66F7836D33 /* Pods-HeartRateWatch-acknowledgements.markdown */,
+				46FE477E8618085F3B13C69D088F7DE0 /* Pods-HeartRateWatch-acknowledgements.plist */,
+				A47802D44BF11154325A138549F9CACC /* Pods-HeartRateWatch-dummy.m */,
+				84183A266A4ABA71B621B8F6A1715496 /* Pods-HeartRateWatch-Info.plist */,
+				45CFD8C01A229C38EFA0DD152A35D6D5 /* Pods-HeartRateWatch-umbrella.h */,
+				C3A863F6A9240CAD991465049BF29F0F /* Pods-HeartRateWatch.debug.xcconfig */,
+				52C6EA7BC1DB3ECA2A45FC15DE2C6865 /* Pods-HeartRateWatch.release.xcconfig */,
+			);
+			name = "Pods-HeartRateWatch";
+			path = "Target Support Files/Pods-HeartRateWatch";
+			sourceTree = "<group>";
+		};
+		2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		38ED70DBCFCB7DD54AE6FB8029C20A9B /* Pods-HeartRateSample */ = {
+			isa = PBXGroup;
+			children = (
+				6B4AFBE6821498B70210B39C1221B7CA /* Pods-HeartRateSample.modulemap */,
+				B21335D546738A4C805AC66AA861C496 /* Pods-HeartRateSample-acknowledgements.markdown */,
+				8EF601AF3C8128F9AD51356C31770A2D /* Pods-HeartRateSample-acknowledgements.plist */,
+				4A6AB2D14D4B59819D709E4D3A4D7E06 /* Pods-HeartRateSample-dummy.m */,
+				9E26E9C0072EBFF000A368DAECB5932D /* Pods-HeartRateSample-Info.plist */,
+				30B8E04C1CF121FF930338C66C189BFF /* Pods-HeartRateSample-umbrella.h */,
+				AAD736C82A8A0C04FF20FAF8B6D833DE /* Pods-HeartRateSample.debug.xcconfig */,
+				F49D3F78B1EDA201241A2950E7A45004 /* Pods-HeartRateSample.release.xcconfig */,
+			);
+			name = "Pods-HeartRateSample";
+			path = "Target Support Files/Pods-HeartRateSample";
+			sourceTree = "<group>";
+		};
+		4121785BD1F8A5858F26BCB1D864AEE1 /* Pods-HeartRateWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEDCE1116BCDC133DA37BB972E91646C /* Pods-HeartRateWatch Extension.modulemap */,
+				A0AA61EE47DA65B2E0B75CF86360CADA /* Pods-HeartRateWatch Extension-acknowledgements.markdown */,
+				8A9CD6D017B4B7C9546618D158E96A82 /* Pods-HeartRateWatch Extension-acknowledgements.plist */,
+				ECFB4FDA6760A479139F181784076336 /* Pods-HeartRateWatch Extension-dummy.m */,
+				B004C00C450C7316F4293729B5FE056A /* Pods-HeartRateWatch Extension-Info.plist */,
+				F2B909A56AF3824763E94AE79DE45B50 /* Pods-HeartRateWatch Extension-umbrella.h */,
+				E27EE89583CDBF535DC7684513ADB315 /* Pods-HeartRateWatch Extension.debug.xcconfig */,
+				0A0603D726BF09D5C20E2DB7BEB44987 /* Pods-HeartRateWatch Extension.release.xcconfig */,
+			);
+			name = "Pods-HeartRateWatch Extension";
+			path = "Target Support Files/Pods-HeartRateWatch Extension";
+			sourceTree = "<group>";
+		};
+		43085B5EC92BA9333228B94389FFA518 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */,
+				43085B5EC92BA9333228B94389FFA518 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A11100BFB4C011F99354DF7BB4A2BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17FA047EDD3B9FB90C1E995232D4C3D5 /* Pods_HeartRateSample.framework */,
+				2D99F58D4763BF8189702092E50EB2A2 /* Pods_HeartRateWatch.framework */,
+				34B4F27010377799C95971FDF6CB3ED6 /* Pods_HeartRateWatch_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9D579A20A77CA55412B3CA3CB51829D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38ED70DBCFCB7DD54AE6FB8029C20A9B /* Pods-HeartRateSample */,
+				11255D861F3D13793E9914C757F0DF3A /* Pods-HeartRateWatch */,
+				4121785BD1F8A5858F26BCB1D864AEE1 /* Pods-HeartRateWatch Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
+				83A11100BFB4C011F99354DF7BB4A2BA /* Products */,
+				C9D579A20A77CA55412B3CA3CB51829D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05554B1AD2ABA03CF4066AF8605FBD8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0DE168F84CFB6DD90E433B3419D162 /* Pods-HeartRateSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674B5FD3ADFBE2E82C7E1E72A97F1FE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111BC4C3BE397C32ABCC5C76D08D0A6A /* Pods-HeartRateWatch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816343C9D5605E2955F821EAC482D357 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC580A0739F2C8B6385617CDA80012AF /* Pods-HeartRateWatch Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E70EEE46B6AAC1A1D1115C855C20058 /* Pods-HeartRateWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963A45357EEBF76C65BBB7886ECD0FF8 /* Build configuration list for PBXNativeTarget "Pods-HeartRateWatch Extension" */;
+			buildPhases = (
+				816343C9D5605E2955F821EAC482D357 /* Headers */,
+				9AE19D285A223174CACA8E6058FE2F59 /* Sources */,
+				C29009D855F671E7BE89ABEF50AEEC9E /* Frameworks */,
+				1F2B373D6B8BAB1633000A6193F718D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HeartRateWatch Extension";
+			productName = "Pods-HeartRateWatch Extension";
+			productReference = 34B4F27010377799C95971FDF6CB3ED6 /* Pods_HeartRateWatch_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E84AF3BC3AF5BF159F83F651241695E /* Pods-HeartRateWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED667CE4CF8B860243C55CED6CEDC54 /* Build configuration list for PBXNativeTarget "Pods-HeartRateWatch" */;
+			buildPhases = (
+				674B5FD3ADFBE2E82C7E1E72A97F1FE8 /* Headers */,
+				6C7EDBFC9F7F4EB2D32229BF03D53B0C /* Sources */,
+				2875B4AB9AAEE6666D8DA34EFF06FB71 /* Frameworks */,
+				B2C7BD9D1B229B863BA5152DFA850D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HeartRateWatch";
+			productName = "Pods-HeartRateWatch";
+			productReference = 2D99F58D4763BF8189702092E50EB2A2 /* Pods_HeartRateWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D3FC4ACEFA489DF88BCA53380C4B1E6 /* Pods-HeartRateSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A7E57F6CBFEE4AB5BABD6C8B6347DFB /* Build configuration list for PBXNativeTarget "Pods-HeartRateSample" */;
+			buildPhases = (
+				05554B1AD2ABA03CF4066AF8605FBD8C /* Headers */,
+				C6ED897880E00FA605B2B980B4BEA794 /* Sources */,
+				5DE3FDA959B18CA4B0197551A7154E40 /* Frameworks */,
+				5BB15DBEAB9A81FFB3ECA5991B455260 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HeartRateSample";
+			productName = "Pods-HeartRateSample";
+			productReference = 17FA047EDD3B9FB90C1E995232D4C3D5 /* Pods_HeartRateSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 83A11100BFB4C011F99354DF7BB4A2BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D3FC4ACEFA489DF88BCA53380C4B1E6 /* Pods-HeartRateSample */,
+				6E84AF3BC3AF5BF159F83F651241695E /* Pods-HeartRateWatch */,
+				5E70EEE46B6AAC1A1D1115C855C20058 /* Pods-HeartRateWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F2B373D6B8BAB1633000A6193F718D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB15DBEAB9A81FFB3ECA5991B455260 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2C7BD9D1B229B863BA5152DFA850D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C7EDBFC9F7F4EB2D32229BF03D53B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D259757C4B2FE2DC982A8844D021BD6 /* Pods-HeartRateWatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE19D285A223174CACA8E6058FE2F59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7AB7C47D66867ED40D7B726E16C1A57 /* Pods-HeartRateWatch Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ED897880E00FA605B2B980B4BEA794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304695AD099FF6DA33844D849EA0376A /* Pods-HeartRateSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		16E72D04A361E39212D4D713B03AF47C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E27EE89583CDBF535DC7684513ADB315 /* Pods-HeartRateWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartRateWatch Extension/Pods-HeartRateWatch Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartRateWatch Extension/Pods-HeartRateWatch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		274D97C0F60C59A634B326BBB9F4C2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C6EA7BC1DB3ECA2A45FC15DE2C6865 /* Pods-HeartRateWatch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartRateWatch/Pods-HeartRateWatch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartRateWatch/Pods-HeartRateWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		2998085DA938E8C1283544602F7F5F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD736C82A8A0C04FF20FAF8B6D833DE /* Pods-HeartRateSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartRateSample/Pods-HeartRateSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartRateSample/Pods-HeartRateSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38F6D2CB2244289CF81A82A8E4578B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		478C8B2AD8258B98DAF7E795AB9F6571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49D3F78B1EDA201241A2950E7A45004 /* Pods-HeartRateSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartRateSample/Pods-HeartRateSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartRateSample/Pods-HeartRateSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78935DE9E0DE93E0B2F5D13AEECA810D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A0603D726BF09D5C20E2DB7BEB44987 /* Pods-HeartRateWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartRateWatch Extension/Pods-HeartRateWatch Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartRateWatch Extension/Pods-HeartRateWatch Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		AD6BCFB3B4B720ECECCD2E0E7012F66B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3A863F6A9240CAD991465049BF29F0F /* Pods-HeartRateWatch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartRateWatch/Pods-HeartRateWatch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartRateWatch/Pods-HeartRateWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		D0944BDDD2CE42EB0A9EDE2E38827B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A7E57F6CBFEE4AB5BABD6C8B6347DFB /* Build configuration list for PBXNativeTarget "Pods-HeartRateSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2998085DA938E8C1283544602F7F5F2B /* Debug */,
+				478C8B2AD8258B98DAF7E795AB9F6571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED667CE4CF8B860243C55CED6CEDC54 /* Build configuration list for PBXNativeTarget "Pods-HeartRateWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6BCFB3B4B720ECECCD2E0E7012F66B /* Debug */,
+				274D97C0F60C59A634B326BBB9F4C2E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0944BDDD2CE42EB0A9EDE2E38827B36 /* Debug */,
+				38F6D2CB2244289CF81A82A8E4578B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963A45357EEBF76C65BBB7886ECD0FF8 /* Build configuration list for PBXNativeTarget "Pods-HeartRateWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16E72D04A361E39212D4D713B03AF47C /* Debug */,
+				78935DE9E0DE93E0B2F5D13AEECA810D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_HeartRateWatch {
+  umbrella header "Pods-HeartRateWatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

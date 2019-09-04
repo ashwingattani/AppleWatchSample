@@ -2,7 +2,7 @@
 //  ExtensionDelegate.swift
 //  HeartRateWatch Extension
 //
-//  Created by Ashwin Gattani on 25/06/19.
+//  Created by Atinderpal Singh on 25/06/19.
 //  Copyright © 2019 Protons. All rights reserved.
 //
 
@@ -31,10 +31,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print("##### didReceive response Extension")
-        
         NotificationCenter.default.post(name: Notification.Name("showMoviePlayer"), object: nil, userInfo: nil)
-
         completionHandler()
     }
 

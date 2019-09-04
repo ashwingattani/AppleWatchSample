@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HeartRateSample
 //
-//  Created by Ashwin Gattani on 25/06/19.
+//  Created by Atinderpal Singh on 25/06/19.
 //  Copyright © 2019 Protons. All rights reserved.
 //
 

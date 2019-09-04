@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		066D5C33BEAD425E41CB3307 /* Pods_HeartRateSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586B5DDE6FD01AAF9F1FD002 /* Pods_HeartRateSample.framework */; };
 		4D081C1B22C34262002A929E /* movieclip.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4D081C1A22C34261002A929E /* movieclip.mov */; };
 		4D081C1C22C34470002A929E /* movieclip.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4D081C1A22C34261002A929E /* movieclip.mov */; };
 		4D081C1D22C34471002A929E /* movieclip.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4D081C1A22C34261002A929E /* movieclip.mov */; };
 		4DB703D522C24BCF00245A53 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB703D422C24BCE00245A53 /* user.png */; };
+		84F0EA67231A699300445E1F /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCAFF622C1F670007725FD /* HealthKitManager.swift */; };
 		D6CCAFE022C1F4B2007725FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCAFDF22C1F4B2007725FD /* AppDelegate.swift */; };
 		D6CCAFE222C1F4B2007725FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CCAFE122C1F4B2007725FD /* ViewController.swift */; };
 		D6CCAFE522C1F4B2007725FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CCAFE322C1F4B2007725FD /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		D6CCB01222C201C3007725FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CCB01122C201C3007725FD /* Assets.xcassets */; };
 		D6CCB01722C201C3007725FD /* HeartRateWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6CCAFFA22C201BD007725FD /* HeartRateWatch.app */; };
 		D6CCB02222C201D1007725FD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CCB02122C201D1007725FD /* HealthKit.framework */; };
+		D85D922D561F5357EFF4141B /* Pods_HeartRateWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C871C4B7E173936781DFC62D /* Pods_HeartRateWatch.framework */; };
+		F484F673CD9F69BA05B106BF /* Pods_HeartRateWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32715D08EDD29C0F2C2435D /* Pods_HeartRateWatch_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +76,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06B01277B055B539586CCE29 /* Pods-HeartRateSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateSample.debug.xcconfig"; path = "Target Support Files/Pods-HeartRateSample/Pods-HeartRateSample.debug.xcconfig"; sourceTree = "<group>"; };
+		34C899108F1F8E3220E996FB /* Pods-HeartRateWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateWatch Extension.release.xcconfig"; path = "Target Support Files/Pods-HeartRateWatch Extension/Pods-HeartRateWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		4D081C1A22C34261002A929E /* movieclip.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movieclip.mov; sourceTree = "<group>"; };
 		4DB703D422C24BCE00245A53 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		586B5DDE6FD01AAF9F1FD002 /* Pods_HeartRateSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartRateSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		839D29A121AC371AADA4490A /* Pods-HeartRateSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateSample.release.xcconfig"; path = "Target Support Files/Pods-HeartRateSample/Pods-HeartRateSample.release.xcconfig"; sourceTree = "<group>"; };
+		A4242642C4039785C5C00F94 /* Pods-HeartRateWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateWatch.release.xcconfig"; path = "Target Support Files/Pods-HeartRateWatch/Pods-HeartRateWatch.release.xcconfig"; sourceTree = "<group>"; };
+		B32715D08EDD29C0F2C2435D /* Pods_HeartRateWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartRateWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C871C4B7E173936781DFC62D /* Pods_HeartRateWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartRateWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CCAFDC22C1F4B2007725FD /* HeartRateSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CCAFDF22C1F4B2007725FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6CCAFE122C1F4B2007725FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,14 +108,25 @@
 		D6CCB01422C201C3007725FD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		D6CCB02022C201D1007725FD /* HeartRateWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartRateWatch Extension.entitlements"; sourceTree = "<group>"; };
 		D6CCB02122C201D1007725FD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		DEFEE764725EE51EEC53D182 /* Pods-HeartRateWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateWatch.debug.xcconfig"; path = "Target Support Files/Pods-HeartRateWatch/Pods-HeartRateWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		E213022788F12095AE06953A /* Pods-HeartRateWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartRateWatch Extension.debug.xcconfig"; path = "Target Support Files/Pods-HeartRateWatch Extension/Pods-HeartRateWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6D7C99B731582F238E2F4C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85D922D561F5357EFF4141B /* Pods_HeartRateWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6CCAFD922C1F4B2007725FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D6CCAFF422C1F59E007725FD /* HealthKit.framework in Frameworks */,
+				066D5C33BEAD425E41CB3307 /* Pods_HeartRateSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +135,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6CCB02222C201D1007725FD /* HealthKit.framework in Frameworks */,
+				F484F673CD9F69BA05B106BF /* Pods_HeartRateWatch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840EF07D231A443300D5E113 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D6CCAFF622C1F670007725FD /* HealthKitManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		D6CCAFD322C1F4B2007725FD = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +158,7 @@
 				D6CCB00A22C201C1007725FD /* HeartRateWatch Extension */,
 				D6CCAFDD22C1F4B2007725FD /* Products */,
 				D6CCAFF222C1F59E007725FD /* Frameworks */,
+				DC6576F82637573EA6B6C33A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +175,7 @@
 		D6CCAFDE22C1F4B2007725FD /* HeartRateSample */ = {
 			isa = PBXGroup;
 			children = (
+				840EF07D231A443300D5E113 /* Manager */,
 				4D081C1A22C34261002A929E /* movieclip.mov */,
 				4DB703D422C24BCE00245A53 /* user.png */,
 				D6CCAFF122C1F59E007725FD /* HeartRateSample.entitlements */,
@@ -152,7 +185,6 @@
 				D6CCAFE622C1F4BC007725FD /* Assets.xcassets */,
 				D6CCAFE822C1F4BC007725FD /* LaunchScreen.storyboard */,
 				D6CCAFEB22C1F4BC007725FD /* Info.plist */,
-				D6CCAFF622C1F670007725FD /* HealthKitManager.swift */,
 			);
 			path = HeartRateSample;
 			sourceTree = "<group>";
@@ -162,6 +194,9 @@
 			children = (
 				D6CCB02122C201D1007725FD /* HealthKit.framework */,
 				D6CCAFF322C1F59E007725FD /* HealthKit.framework */,
+				586B5DDE6FD01AAF9F1FD002 /* Pods_HeartRateSample.framework */,
+				C871C4B7E173936781DFC62D /* Pods_HeartRateWatch.framework */,
+				B32715D08EDD29C0F2C2435D /* Pods_HeartRateWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,6 +225,19 @@
 			path = "HeartRateWatch Extension";
 			sourceTree = "<group>";
 		};
+		DC6576F82637573EA6B6C33A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06B01277B055B539586CCE29 /* Pods-HeartRateSample.debug.xcconfig */,
+				839D29A121AC371AADA4490A /* Pods-HeartRateSample.release.xcconfig */,
+				DEFEE764725EE51EEC53D182 /* Pods-HeartRateWatch.debug.xcconfig */,
+				A4242642C4039785C5C00F94 /* Pods-HeartRateWatch.release.xcconfig */,
+				E213022788F12095AE06953A /* Pods-HeartRateWatch Extension.debug.xcconfig */,
+				34C899108F1F8E3220E996FB /* Pods-HeartRateWatch Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6CCAFEE22C1F4BC007725FD /* Build configuration list for PBXNativeTarget "HeartRateSample" */;
 			buildPhases = (
+				30674A4F3534655F4B889DF5 /* [CP] Check Pods Manifest.lock */,
 				D6CCAFD822C1F4B2007725FD /* Sources */,
 				D6CCAFD922C1F4B2007725FD /* Frameworks */,
 				D6CCAFDA22C1F4B2007725FD /* Resources */,
@@ -216,8 +265,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6CCB01C22C201C3007725FD /* Build configuration list for PBXNativeTarget "HeartRateWatch" */;
 			buildPhases = (
+				D10C1C321D397776FE8BE137 /* [CP] Check Pods Manifest.lock */,
 				D6CCAFF822C201BD007725FD /* Resources */,
 				D6CCB01B22C201C3007725FD /* Embed App Extensions */,
+				6D7C99B731582F238E2F4C09 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6CCB01822C201C3007725FD /* Build configuration list for PBXNativeTarget "HeartRateWatch Extension" */;
 			buildPhases = (
+				66B9F2599FF3CDB1ED081B63 /* [CP] Check Pods Manifest.lock */,
 				D6CCB00222C201C1007725FD /* Sources */,
 				D6CCB00322C201C1007725FD /* Frameworks */,
 				D6CCB00422C201C1007725FD /* Resources */,
@@ -331,6 +383,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30674A4F3534655F4B889DF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartRateSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66B9F2599FF3CDB1ED081B63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartRateWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D10C1C321D397776FE8BE137 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartRateWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6CCAFD822C1F4B2007725FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -348,6 +469,7 @@
 			files = (
 				D6CCB01022C201C1007725FD /* NotificationController.swift in Sources */,
 				D6CCB00E22C201C1007725FD /* ExtensionDelegate.swift in Sources */,
+				84F0EA67231A699300445E1F /* HealthKitManager.swift in Sources */,
 				D6CCB00C22C201C1007725FD /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,12 +635,13 @@
 		};
 		D6CCAFEF22C1F4BC007725FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B01277B055B539586CCE29 /* Pods-HeartRateSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HeartRateSample/HeartRateSample.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5YVF838RR5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPLWA947AM;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HeartRateSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -526,9 +649,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesampleL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HealthKitDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -536,12 +659,13 @@
 		};
 		D6CCAFF022C1F4BC007725FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839D29A121AC371AADA4490A /* Pods-HeartRateSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HeartRateSample/HeartRateSample.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5YVF838RR5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPLWA947AM;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HeartRateSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -549,9 +673,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesampleL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HealthKitDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,21 +683,22 @@
 		};
 		D6CCB01922C201C3007725FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E213022788F12095AE06953A /* Pods-HeartRateWatch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "HeartRateWatch Extension/HeartRateWatch Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5YVF838RR5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPLWA947AM;
 				INFOPLIST_FILE = "HeartRateWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesampleL.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = HealthKitWatchExtensionDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -584,21 +709,22 @@
 		};
 		D6CCB01A22C201C3007725FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C899108F1F8E3220E996FB /* Pods-HeartRateWatch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "HeartRateWatch Extension/HeartRateWatch Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5YVF838RR5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPLWA947AM;
 				INFOPLIST_FILE = "HeartRateWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesampleL.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = HealthKitWatchExtensionDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -609,17 +735,18 @@
 		};
 		D6CCB01D22C201C3007725FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFEE764725EE51EEC53D182 /* Pods-HeartRateWatch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5YVF838RR5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPLWA947AM;
 				IBSC_MODULE = HeartRateWatch_Extension;
 				INFOPLIST_FILE = HeartRateWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesampleL.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HealthKitWatchDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -630,17 +757,18 @@
 		};
 		D6CCB01E22C201C3007725FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4242642C4039785C5C00F94 /* Pods-HeartRateWatch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5YVF838RR5;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPLWA947AM;
 				IBSC_MODULE = HeartRateWatch_Extension;
 				INFOPLIST_FILE = HeartRateWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesample.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.heartratesampleL.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = HealthKitWatchDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
